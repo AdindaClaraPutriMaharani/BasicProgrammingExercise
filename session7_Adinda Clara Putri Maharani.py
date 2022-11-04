@@ -11,6 +11,7 @@ def menu():
 #calculate the area of the triangle
 def triangle():
     #input the base and the height of the triangle
+    print("Calculate the area of the triangle")
     base = float(input("base : "))
     height = float(input("height : "))
     #set up the formula for the area of triangle
@@ -19,7 +20,8 @@ def triangle():
 
 #calculate the are of the rectangle
 def rectangle():
-    #input the length and the width of the rectangle\
+    #input the length and the width of the rectangle
+    print("Calculate the area of the rectangle")
     length = float(input("length : "))
     width = float(input("width : "))
     #set up the formula for the area of the rectangle
@@ -50,6 +52,15 @@ while(True):
         odd_and_even()
     if (menu == "4"):
         break 
+
+
+
+
+
+
+
+
+
 
 
 
