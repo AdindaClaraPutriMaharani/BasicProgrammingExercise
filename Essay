@@ -1,0 +1,46 @@
+print ("UTS-ESSAY 1 ADINDA CLARA PUTRI MAHARANI")
+
+while(True):
+    print("Menu :")
+    print("1. Calculating current age")
+    print("2. Calculating the remaining years of installments")
+    print("3. Calculating body weight BMI")
+    print("4. Quit ")
+    menu = input("select the menu :")
+    
+    #Calculating current age
+    if (menu == "1"):
+        birth_year = int(input("What year were you born :"))
+        now = int(input("What year now :"))
+        age = now - birth_year
+        print ("Your current age is", age)
+
+    #Calculating the remaining years of installments
+    elif (menu == "2"):
+        installment = float(input("How many years are your repayments :"))
+        installment_paid_off = float(input("How many years of installment have you paid: "))
+        years = (installment - installment_paid_off)
+        days = ( years * 360 )
+        print ("So, the rest of your installment is", years, "or", days, "days")
+
+    #Calculating body weight BMI
+    elif (menu == "3"):
+        weight = float(input("What is your weight (kg):"))
+        height = float(input("What is your height (m):"))
+        height_quadrate = (height * height)
+        BMI = (weight / height_quadrate )
+        if BMI <= 18.5:
+            print ("So, your BMI is Disproportionate body weight")
+        elif 18.5 <= BMI <= 22.9:
+            print ("So, your BMI is Normal weight")
+        elif 23 <= BMI <= 29.9:
+             print ("So, your BMI is Being overweight (potentially obese)")
+        elif BMI >= 30:
+            print ("So, your BMI is Obesity")
+
+    #Exit
+    elif (menu == "4"):
+        quit = input("Are you sure want to quit? (y/n) :")
+        if (quit == "y"):
+            print ("THANK YOU FOR USING THIS PROGRAM. HAVE A GOOD DAY!")
+            break
